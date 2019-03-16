@@ -1,14 +1,42 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>NgAntDesignProMobilePlatform</title>
-  <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8">
+    <title>NgAntDesignProMobilePlatform</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        
+        .am-activity-indicator-spinner {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.or…01.65s1.65-.74%201.65-1.65c0-.06-.012-.112-.018-.167z%22%2F%3E%3C%2Fsvg%3E);
+            background-position: 50%;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            -webkit-animation: 1s linear infinite spinner-anime;
+            animation: 1s linear infinite spinner-anime;
+        }
+    </style>
 </head>
+
 <body>
-  <app-root></app-root>
+    <app-root>
+        <div class="loading">
+            <span aria-label="'loading'" class="am-activity-indicator-spinner"></span>
+            <span style="margin-left:8px;">加载中...</span>
+        </div>
+    </app-root>
 </body>
+
 </html>

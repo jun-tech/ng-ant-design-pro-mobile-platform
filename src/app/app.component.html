@@ -1,21 +1,66 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<TabBar [barTintColor]="'white'" [activeTab]="activeTab" style="width: 100%;height:100%;position: fixed;top:0;">
+    <TabPane [title]='custom1'>
+        <ng-template #custom1>
+            <TabBarTab [title]="'Life'" [key]="0" [badge]="1" [icon]="icon1" (onPress)="onPress($event)" [selectedIcon]="icon11">
+                <ng-template #icon1>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+                <ng-template #icon11>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+            </TabBarTab>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="content" *ngIf="activeTab === 0"></ng-template>
+    </TabPane>
+    <TabPane [title]='custom2'>
+        <ng-template #custom2>
+            <TabBarTab [title]="'Koubei'" [key]="1" [badge]="'new'" (onPress)="onPress($event)" [icon]="icon2" [selectedIcon]="icon22">
+                <ng-template #icon2>
+                    <div style="width:22px;height: 22px;background: url('https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+                <ng-template #icon22>
+                    <div style="width:22px;height: 22px;background: url('https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+            </TabBarTab>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="content" *ngIf="activeTab === 1"></ng-template>
+    </TabPane>
+    <TabPane [title]='custom3'>
+        <ng-template #custom3>
+            <TabBarTab [title]="'Friend'" [key]="2" [dot]="true" (onPress)="onPress($event)" [icon]="icon3" [selectedIcon]="icon33">
+                <ng-template #icon3>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+                <ng-template #icon33>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+            </TabBarTab>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="content" *ngIf="activeTab === 2"></ng-template>
+    </TabPane>
+    <TabPane style="text-align: center;" [title]='custom4'>
+        <ng-template #custom4>
+            <TabBarTab [title]="'My'" [key]="3" [icon]="icon4" (onPress)="onPress($event)" [selectedIcon]="icon44">
+                <ng-template #icon4>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+                <ng-template #icon44>
+                    <div style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg') center center / 21px 21px no-repeat;">
+                    </div>
+                </ng-template>
+            </TabBarTab>
+        </ng-template>
+        <ng-template [ngTemplateOutlet]="content" *ngIf="activeTab === 3"></ng-template>
+    </TabPane>
+</TabBar>
 
-<router-outlet></router-outlet>
+<ng-template #content>
+    <router-outlet></router-outlet>
+</ng-template>
