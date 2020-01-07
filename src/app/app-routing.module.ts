@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'm1/p1' },
+  { path: '', pathMatch: 'full', redirectTo: 'm3/p1' },
   {
     path: 'm1',
-    loadChildren: './pages/m1/m1.module#M1Module',
+    loadChildren: () => import('./pages/m1/m1.module').then(m => m.M1Module),
   },
   {
     path: 'm2',
-    loadChildren: './pages/m2/m2.module#M2Module',
+    loadChildren: () => import('./pages/m2/m2.module').then(m => m.M2Module),
+  },
+  {
+    path: 'm3',
+    loadChildren: () => import('./pages/m3/m3.module').then(m => m.M3Module),
   }
 ];
 

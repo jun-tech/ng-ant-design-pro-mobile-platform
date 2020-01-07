@@ -11,7 +11,7 @@ import { SharedCoreModule } from './services/core/shared-core-module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

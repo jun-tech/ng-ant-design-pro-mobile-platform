@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
   // 默认点中每几个tab
   activeTab = 0;
 
-  pages = ['m1/p1', 'm2/p2'];
+  // pages = ['m1/p1', 'm2/p2', 'm3/p1', 'm3/p2'];
+  pages = ['m3/p1', 'm3/p2', 'm3/mine', 'm3/match'];
 
   constructor(private hst: ElementRef, private router: Router) {
   }
@@ -37,7 +38,8 @@ export class AppComponent implements OnInit {
   onPress(event) {
     console.log('event: ', event);
     this.activeTab = event.key;
-    const index = event.key % 2;
+    // const index = event.key % 2;
+    const index = this.activeTab;
     this.router.navigateByUrl(this.pages[index]);
   }
 
