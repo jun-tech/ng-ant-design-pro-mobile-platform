@@ -111,24 +111,17 @@
     "@angular-devkit/core" "8.3.21"
     rxjs "6.4.0"
 
-"@angular/animations@^7.1.0":
-  version "7.2.9"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-7.2.9.tgz#1bfacb76dfd80656e28edb4efdfd3154e56f1c29"
-  integrity sha512-cdIf/UWwhNlw6Ep3pRxRk12F8q/GyTbcHDF4qbgg7lZEDPYS32KS1lpHY1pgSuSOIPZUT+iLPOxAZ6cu7Am1vA==
-  dependencies:
-    tslib "^1.9.0"
-
-"@angular/animations@~8.2.14":
+"@angular/animations@^8.2.4", "@angular/animations@~8.2.14":
   version "8.2.14"
   resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-8.2.14.tgz#76736b21e56165e6ca4925fb69605bdcc56aba7d"
   integrity sha512-3Vc9TnNpKdtvKIXcWDFINSsnwgEMiDmLzjceWg1iYKwpeZGQahUXPoesLwQazBMmxJzQiA4HOMj0TTXKZ+Jzkg==
   dependencies:
     tslib "^1.9.0"
 
-"@angular/cdk@^7.2.0":
-  version "7.3.4"
-  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-7.3.4.tgz#b9d8c62cdd24fa6517dd3ae68c78632b1525d35f"
-  integrity sha512-cHl1o7obogCO3Nxf9n8MrXpfHa7AH1QNX2BY+bftYBTHW++YJe+qAwkwWLVqnJD9TQE2OpiR058zoJU20khM/g==
+"@angular/cdk@^8.1.4":
+  version "8.2.3"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-8.2.3.tgz#16b96ffa935cbf5a646757ecaf2b19c434678f72"
+  integrity sha512-ZwO5Sn720RA2YvBqud0JAHkZXjmjxM0yNzCO8RVtRE9i8Gl26Wk0j0nQeJkVm4zwv2QO8MwbKUKGTMt8evsokA==
   dependencies:
     tslib "^1.7.1"
   optionalDependencies:
@@ -230,12 +223,20 @@
   dependencies:
     tslib "^1.9.0"
 
-"@ant-design/icons-angular@~2.0.1":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-2.0.2.tgz#ee81d7c098eb8e2a04dd82d3370511af26e46d13"
-  integrity sha512-Pk/9BY5/KmasrK1ViYwbZG0piL27IdKqWjAyTltqJbKrqqJi9DMXYKnXhmqGXQeZ2YCPi9eXGYkwaWEjwJRgzA==
+"@ant-design/colors@^3.1.0":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-3.2.2.tgz#5ad43d619e911f3488ebac303d606e66a8423903"
+  integrity sha512-YKgNbG2dlzqMhA9NtI3/pbY16m3Yl/EeWBRa+lB1X1YaYxHrxNexiQYCLTWO/uDvAjLFMEDU+zR901waBtMtjQ==
   dependencies:
-    ant-design-palettes "^1.1.3"
+    tinycolor2 "^1.4.1"
+
+"@ant-design/icons-angular@~8.0.3":
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-8.0.3.tgz#e0e3a4104a878058f9a211ca427e07e2baed9c86"
+  integrity sha512-P7h4g/cy2m3sb8N238QIMSHHPyJcYJahqZlDqQYxWChk3zNrSJfyWs9Rp1cEt68ZjMxsw1vwh4Fbvvm97dFedA==
+  dependencies:
+    "@ant-design/colors" "^3.1.0"
+    tslib "^1.9.0"
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"
@@ -1396,13 +1397,6 @@ ansi-styles@^3.2.1:
   integrity sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
   dependencies:
     color-convert "^1.9.0"
-
-ant-design-palettes@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/ant-design-palettes/-/ant-design-palettes-1.1.3.tgz#84119b1a4d86363adc52a38d587e65336a0a27dd"
-  integrity sha512-UpkkTp8egEN21KZNvY7sTcabLlkHvLvS71EVPk4CYi77Z9AaGGCaVn7i72tbOgWDrQp2wjIg8WgMbKBdK7GtWA==
-  dependencies:
-    tinycolor2 "^1.4.1"
 
 anymatch@^2.0.0:
   version "2.0.0"
@@ -5315,14 +5309,14 @@ neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-ng-zorro-antd-mobile@^0.11.7:
-  version "0.11.7"
-  resolved "https://registry.yarnpkg.com/ng-zorro-antd-mobile/-/ng-zorro-antd-mobile-0.11.7.tgz#5723a5e6c2ff02832c48623ac2a72f505448d8be"
-  integrity sha512-Y7RXrFnF6aaynpECHN9obqNA0cEwKdMnrNp0Smqohi8kC23tqD5UREPTXk1TG8tKpwEVZbG+5Dj+I2Mlil3xhA==
+ng-zorro-antd-mobile@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd-mobile/-/ng-zorro-antd-mobile-1.0.2.tgz#0a74492abce942eb050a9a05131526ce630b7c23"
+  integrity sha512-p8NQQM6kvNUi0vfx+ywwr97tDqHKmbfup3sq9P2K07YN8nQzgomJ9ELHvvkPXDa3tlFIqRQVE7f86m/iQmEMLQ==
   dependencies:
-    "@angular/animations" "^7.1.0"
-    "@angular/cdk" "^7.2.0"
-    "@ant-design/icons-angular" "~2.0.1"
+    "@angular/animations" "^8.2.4"
+    "@angular/cdk" "^8.1.4"
+    "@ant-design/icons-angular" "~8.0.3"
     tslib "^1.9.0"
 
 nice-try@^1.0.4:
