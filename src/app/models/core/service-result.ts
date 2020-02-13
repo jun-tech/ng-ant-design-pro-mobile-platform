@@ -17,7 +17,7 @@ export class ServiceResult {
     /**
      * 对象
      */
-    data: {};
+    data: any;
 
     /**
      * 总数
